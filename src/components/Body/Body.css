@@ -1,0 +1,42 @@
+.body-menu-bar {
+    display: flex;
+    flex: 1;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e01a22;
+    padding: 12px 24px;
+    margin: 15px auto;
+    border-radius: 9999px;
+    width: 100%;
+    max-width: 1050px;
+    height: 45px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.body-logo {
+    height: 50px;
+    margin-left: 15px;
+}
+
+.body-nav {
+    display: flex;
+    gap: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-right: 60px;
+}
+
+.body-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.body-nav a:hover {
+    text-decoration: none;
+}
