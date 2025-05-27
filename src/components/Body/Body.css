@@ -1,5 +1,8 @@
 /* Container principal da barra vermelha do menu */
 .body-menu-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
     display: flex;
     flex: 1;
     gap: 20px;
@@ -7,7 +10,7 @@
     align-items: center;
     background-color: #e01a22;
     padding: 12px 24px;
-    margin: 15px auto;
+    margin: 10px auto;
     border-radius: 9999px;
     width: 100%;
     max-width: 1050px;
