@@ -1,7 +1,8 @@
+/* Container principal da barra vermelha do menu */
 .body-menu-bar {
     display: flex;
     flex: 1;
-    gap: 60px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     background-color: #e01a22;
@@ -14,29 +15,108 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo do logo da Nutella */
 .body-logo {
     height: 50px;
     margin-left: 15px;
+    margin-right: 10px;
 }
 
+/* Container dos links de navegação */
 .body-nav {
     display: flex;
-    gap: 100px;
+    gap: 80px;
     font-weight: bold;
     font-size: 18px;
     color: white;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
     flex: 1;
     margin-right: 60px;
+    position: relative;
 }
 
-.body-nav a {
+/* Estilo dos links e botões do menu principal */
+.body-nav a,
+.menu-button {
     color: white;
     text-decoration: none;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 14px;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.body-nav a:hover {
+/* Efeito hover para links e botões do menu */
+.body-nav a:hover,
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+/* Wrapper para itens que possuem submenu (como “Sobre Nutella®”) */
+.menu-item {
+    position: relative;
+}
+
+/* Exibe o submenu quando passa o mouse no item pai */
+.menu-item:hover .submenu {
+    display: flex;
+}
+
+/* Estilo da caixa de submenu dropdown */
+.submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Estilo de cada link dentro do submenu */
+.submenu a {
+    padding: 12px;
     text-decoration: none;
+    color: #e01a22;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s, box-shadow 0.2s;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    width: 100%;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Remove a borda do último link do submenu */
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+/* Animação de entrada do submenu (fade + slide) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }

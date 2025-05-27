@@ -12,7 +12,7 @@ Project to a team of marketing students to add marketing ideias in the nutella w
 
 🎨 Estilização
 
-- Tailwind CSS
+- CSS
 
 🧩 Componentes Visuais
 
