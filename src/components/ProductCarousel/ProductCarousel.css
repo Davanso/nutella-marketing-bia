@@ -1,5 +1,5 @@
 .carousel-container {
-    padding: 30px 0;
+    padding: 30px;
     color: white;
     text-align: center;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
@@ -62,13 +62,13 @@
 .carousel-nav {
     position: absolute;
     right: 650px;
-    bottom: 20px;
     display: flex;
     gap: 12px;
+    bottom: -520px;
 }
 
 .carousel-nav button {
-    color: #e01a22;
+    color: white;
     border: 1px solid #e01a22;
     font-size: 14px;
     border-radius: 50%;
@@ -76,16 +76,16 @@
     height: 40px;
     cursor: pointer;
     font-weight: bold;
-    background: white;
+    background: #e01a22;
     transition: background 0.3s;
 }
 
 .carousel-nav button:hover {
-    color: white;
-    background: #e01a22;
+    color: #e01a22;
+    background: white;
 }
 
 .carousel-wrapper {
     position: relative;
-    z-index: 1; /* acima do fundo */
+    z-index: 1;
 }
