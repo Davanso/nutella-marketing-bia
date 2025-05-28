@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                 <div>
                     <h4>Para empresas</h4>
                     <ul>
-                        <li>Nutella® xxx</li>
+                        <li>Encontre a Nutella® ideal para seu negócio</li>
                     </ul>
                 </div>
 

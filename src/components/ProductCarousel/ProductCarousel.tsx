@@ -32,8 +32,8 @@ const ProductCarousel: React.FC = () => {
                 <div className="carousel-slide">
                     <a href={products[current].link}>
                         <img src={products[current].image} alt={products[current].name} className="carousel-image" />
-                        <div className="carousel-label">{products[current].name}</div>
                     </a>
+                        <div className="carousel-label">{products[current].name}</div>
                 </div>
                 <div className="carousel-text">
                     <h2>Um amor,<br />diferentes<br />maneiras de<br />compartilhá-lo</h2>
