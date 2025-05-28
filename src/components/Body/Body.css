@@ -90,7 +90,6 @@
 /* Estilo de cada link dentro do submenu */
 .submenu a {
     padding: 12px;
-    text-decoration: none;
     color: #e01a22;
     font-weight: bold;
     font-size: 14px;
