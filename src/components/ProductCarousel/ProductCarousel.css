@@ -1,8 +1,10 @@
 .carousel-container {
     padding: 30px;
     color: white;
+    margin-bottom: 100px;
     text-align: center;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    top: 0;
 }
 
 /* Área que agrupa imagem + texto */
@@ -61,11 +63,14 @@
 /* Navegação do carrossel */
 .carousel-nav {
     position: absolute;
-    right: 650px;
+    bottom: -450px;
+    left: 54.5%;
+    transform: translateX(-50%);
     display: flex;
     gap: 12px;
-    bottom: -520px;
+    z-index: 2;
 }
+
 
 .carousel-nav button {
     color: white;
