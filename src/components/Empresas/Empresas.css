@@ -1,34 +1,120 @@
-.empresas-container {
-    min-height: 100vh;
-    padding: 60px 20px;
+.hero-banner {
     background-color: white;
+    width: 100%;
+    height: 30vh;
+    margin-top: 30px;
+    color: #e01a22;
+    text-align: center;
+    position: relative;
+}
+
+.hero-banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-banner-content h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.hero-banner-content-subtext {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.hero-expandable-message {
+    max-width: 700px;
+    margin: 20px auto 0;
+    font-size: 15px;
     color: #333;
     text-align: center;
 }
 
-.empresas-container h1 {
-    font-size: 36px;
-    color: #e01a22;
-    margin-bottom: 20px;
+.hero-expandable-message p {
+    margin-bottom: 12px;
 }
 
-.empresas-container p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 40px;
-}
-
-.back-link {
-    text-decoration: none;
+.hero-toggle-button {
+    background: none;
+    border: none;
     color: #e01a22;
     font-weight: bold;
-    border: 2px solid #e01a22;
-    padding: 10px 20px;
-    border-radius: 999px;
-    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 14px;
 }
 
-.back-link:hover {
-    background: #e01a22;
-    color: white;
+.hero-toggle-button:hover {
+    color: #b0171a;
+}
+
+
+/* Benefícios */
+.benefits-grid {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefits-grid h2 {
+    font-size: 28px;
+    color: #e01a22;
+    margin-bottom: 48px;
+}
+
+.benefits-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-card img {
+    height: 64px;
+    margin-bottom: 18px;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #e01a22;
+}
+
+.benefit-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.hero-toggle-button {
+    background: none;
+    border: none;
+    color: #e01a22;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 auto;
 }
