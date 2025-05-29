@@ -1,21 +1,14 @@
-import Header from "./components/Header/Header.tsx";
-import Body from "./components/Body/Body.tsx";
-import ProductCarousel from "./components/ProductCarousel/ProductCarousel.tsx";
-import Footer from "./components/Footer/Footer.tsx";
-import HeroCarousel from "./components/HeroCarousel/HeroCarousel.tsx";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Empresas from "./pages/Empresas";
 
-function App() {
+const App = () => {
     return (
-        <div className="min-h-screen bg-white">
-            <Header />
-            <Body />
-            <main>
-                <HeroCarousel />
-                <ProductCarousel />
-            </main>
-            <Footer />
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/empresas" element={<Empresas />} />
+        </Routes>
     );
-}
+};
 
 export default App;

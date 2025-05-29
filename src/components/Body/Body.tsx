@@ -33,7 +33,7 @@ const Body: React.FC = () => {
                     <div className="menu-item">
                         <button className="menu-button">Para empresas</button>
                         <div className="submenu">
-                            <a href="/">Encontre a Nutella® ideal para seu negócio</a>
+                            <a href="/empresas">Encontre a Nutella® ideal para seu negócio</a>
                         </div>
                     </div>
                     <div className="menu-item">
