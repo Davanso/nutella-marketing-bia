@@ -12,7 +12,7 @@ function Empresas() {
         {
             id: 1,
             image: "/images/nutella_profissional1.jpg",
-            title: "Nutella® reconhecida em qualquer vitrine",
+            title: "Utensilíos de cozinha Nutella®",
             subtitle: "",
             link: "",
         },
@@ -25,7 +25,7 @@ function Empresas() {
         {
             id: 3,
             image: "/images/nutella_profissional3.jpg",
-            title: "Alta qualidade e rendimento superior",
+            title: "Mixer profissional Nutella®",
             link: "",
         },
     ];
@@ -116,20 +116,20 @@ function Empresas() {
                         </div>
                     </section>
 
-                    {/*/!* Estratégia de relacionamento *!/*/}
-                    {/*<section className="relacionamento-section">*/}
-                    {/*    <h2>Construindo relacionamento com os profissionais</h2>*/}
-                    {/*    <p>*/}
-                    {/*        Para ampliar a presença e o relacionamento da marca Nutella entre profissionais,*/}
-                    {/*        lançamos uma série de iniciativas estratégicas:*/}
-                    {/*    </p>*/}
-                    {/*    <ul>*/}
-                    {/*        <li>Desenvolvimento de novos produtos voltados à produção artesanal.</li>*/}
-                    {/*        <li>Iniciativas sustentáveis com foco na produção consciente.</li>*/}
-                    {/*        <li>Canais dedicados de comunicação com confeiteiros.</li>*/}
-                    {/*        <li>Experiência digital integrada ao site da Nutella.</li>*/}
-                    {/*    </ul>*/}
-                    {/*</section>*/}
+                    {/* Estratégia de relacionamento */}
+                    <section className="relacionamento-section">
+                        <h2>Construindo relacionamento com os profissionais</h2>
+                        <p>
+                            Para ampliar a presença e o relacionamento da marca Nutella entre profissionais,
+                            lançamos uma série de iniciativas estratégicas:
+                        </p>
+                        <ul>
+                            <li>Desenvolvimento de novos produtos voltados à produção artesanal.</li>
+                            <li>Iniciativas sustentáveis com foco na produção consciente.</li>
+                            <li>Canais dedicados de comunicação com confeiteiros.</li>
+                            <li>Experiência digital integrada ao site da Nutella.</li>
+                        </ul>
+                    </section>
 
                     {/*/!* Canal exclusivo para confeiteiros *!/*/}
                     {/*<section className="canal-section">*/}
@@ -150,20 +150,20 @@ function Empresas() {
                     {/*    </ul>*/}
                     {/*</section>*/}
 
-                    {/*/!* Programa de Recompensas *!/*/}
-                    {/*<section className="recompensas-section">*/}
-                    {/*    <h2>Programa de Recompensas</h2>*/}
-                    {/*    <p>*/}
-                    {/*        Com QR Codes nas embalagens, confeiteiros acumulam pontos ao cadastrar códigos únicos*/}
-                    {/*        na plataforma. Os pontos geram vantagens reais:*/}
-                    {/*    </p>*/}
-                    {/*    <ul>*/}
-                    {/*        <li>Descontos em novas compras</li>*/}
-                    {/*        <li>Brindes e materiais exclusivos</li>*/}
-                    {/*        <li>Acesso a eventos e workshops</li>*/}
-                    {/*        <li>Promoções personalizadas conforme o perfil profissional</li>*/}
-                    {/*    </ul>*/}
-                    {/*</section>*/}
+                    {/* Programa de Recompensas */}
+                    <section className="recompensas-section">
+                        <h2>Programa de Recompensas</h2>
+                        <p>
+                            Com QR Codes nas embalagens, confeiteiros acumulam pontos ao cadastrar códigos únicos
+                            na plataforma. Os pontos geram vantagens reais:
+                        </p>
+                        <ul>
+                            <li>Descontos em novas compras</li>
+                            <li>Brindes e materiais exclusivos</li>
+                            <li>Acesso a eventos e workshops</li>
+                            <li>Promoções personalizadas conforme o perfil profissional</li>
+                        </ul>
+                    </section>
         </div>
     );
 }
