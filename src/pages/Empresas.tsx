@@ -3,10 +3,34 @@ import Header from "../components/Header/Header.tsx";
 import Body from "../components/Body/Body.tsx";
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import HeroCarousel from "../components/HeroCarousel/HeroCarousel.tsx";
 
 
 function Empresas() {
 
+    const slidesEmpresas = [
+        {
+            id: 1,
+            image: "/images/nutella_profissional1.jpg",
+            title: "Nutella® reconhecida em qualquer vitrine",
+            subtitle: "",
+            link: "",
+        },
+        {
+            id: 2,
+            image: "/images/nutella_profissional2.jpg",
+            title: "Pensado para quem vive da confeitaria",
+            link: "",
+        },
+        {
+            id: 3,
+            image: "/images/nutella_profissional3.jpg",
+            title: "Alta qualidade e rendimento superior",
+            link: "",
+        },
+    ];
+
+    const [currentSlide, setCurrentSlide] = useState(0);
     const [showMore, setShowMore] = useState(false);
 
     return (
@@ -39,16 +63,31 @@ function Empresas() {
                             <button className="hero-toggle-button" onClick={() => setShowMore(!showMore)}>
                                 {showMore ? (
                                     <>
-                                        Mostrar menos <FaChevronUp />
+                                        <FaChevronUp />
                                     </>
                                 ) : (
                                     <>
-                                        Mostrar mais <FaChevronDown />
+                                        <FaChevronDown />
                                     </>
                                 )}
                             </button>
                         </div>
                     </section>
+
+                    <section className="hero-carousel">
+                        <HeroCarousel
+                            customClass="hero-carousel-empresas"
+                            slides={slidesEmpresas}
+                            onSlideChange={(index) => setCurrentSlide(index)}
+                            hideInternalTitle={true}
+                        />
+
+                        <div className="hero-slide-title-container">
+                            {slidesEmpresas[currentSlide]?.title}
+                        </div>
+
+                    </section>
+
 
                     {/* Benefícios */}
                     <section className="benefits-grid">
