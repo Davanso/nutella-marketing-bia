@@ -62,7 +62,7 @@
 }
 
 /* Carrossel da Página Empresas */
-.hero-carousel-empresas {
+.hero-carousel-empresas {;
     position: relative;
     height: 500px;
     overflow: hidden;
@@ -213,4 +213,164 @@
     font-size: 15px;
     color: #555;
     line-height: 1.5;
+}
+
+/*Galeria de imagens*/
+.galeria-hover {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.galeria-hover h2 {
+    color: #e01a22;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.galeria-item img {
+    width: 100%;
+    max-height: 350px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+    border-radius: 16px;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(224, 26, 34, 0.85);
+    color: white;
+    padding: 14px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    text-align: center;
+}
+
+.galeria-item:hover .overlay {
+    transform: translateY(0);
+}
+
+/* Relacionamento */
+.relacionamento-section {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.relacionamento-section h2 {
+    font-size: 28px;
+    color: #e01a22;
+    margin-bottom: 40px;
+}
+
+.relacionamento-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.relacionamento-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    width: 240px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.relacionamento-card:hover {
+    transform: translateY(-5px);
+}
+
+.relacionamento-card img {
+    height: 56px;
+    margin-bottom: 14px;
+}
+
+.relacionamento-card h3 {
+    font-size: 18px;
+    color: #e01a22;
+    margin-bottom: 8px;
+}
+
+.relacionamento-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/*Recompensas */
+.recompensas-section {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.recompensas-section h2 {
+    font-size: 28px;
+    color: #e01a22;
+    margin-bottom: 48px;
+}
+
+.recompensas-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.recompensa-item {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.recompensa-item:hover {
+    transform: translateY(-6px);
+}
+
+.recompensa-item img {
+    height: 72px;
+    margin-bottom: 18px;
+}
+
+.recompensa-item h3 {
+    font-size: 20px;
+    color: #e01a22;
+    margin-bottom: 12px;
+}
+
+.recompensa-item p {
+    font-size: 15px;
+    color: #555;
 }

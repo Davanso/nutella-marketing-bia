@@ -116,54 +116,80 @@ function Empresas() {
                         </div>
                     </section>
 
+                    {/* Galeria de Imagens */}
+                    <section className="galeria-hover">
+                        <div className="galeria-grid">
+                            <div className="galeria-item">
+                                <img src="/images/galeria1.png" alt="Usando Nutella" />
+                                <div className="overlay">Usando Nutella</div>
+                            </div>
+                            <div className="galeria-item">
+                                <img src="/images/galeria2.png" alt="Mais rendimento" />
+                                <div className="overlay">Mais rendimento</div>
+                            </div>
+                            <div className="galeria-item">
+                                <img src="/images/galeria3.png" alt="Produção artesanal" />
+                                <div className="overlay">Produção artesanal</div>
+                            </div>
+                        </div>
+                    </section>
+
+
                     {/* Estratégia de relacionamento */}
                     <section className="relacionamento-section">
                         <h2>Construindo relacionamento com os profissionais</h2>
-                        <p>
-                            Para ampliar a presença e o relacionamento da marca Nutella entre profissionais,
-                            lançamos uma série de iniciativas estratégicas:
-                        </p>
-                        <ul>
-                            <li>Desenvolvimento de novos produtos voltados à produção artesanal.</li>
-                            <li>Iniciativas sustentáveis com foco na produção consciente.</li>
-                            <li>Canais dedicados de comunicação com confeiteiros.</li>
-                            <li>Experiência digital integrada ao site da Nutella.</li>
-                        </ul>
+                        <div className="relacionamento-cards">
+                            <div className="relacionamento-card">
+                                <img src="/icons/produto.svg" alt="Novos Produtos" />
+                                <h3>Novos Produtos</h3>
+                                <p>Desenvolvimento de itens voltados à produção artesanal com foco no uso profissional.</p>
+                            </div>
+                            <div className="relacionamento-card">
+                                <img src="/icons/sustentavel.svg" alt="Sustentabilidade" />
+                                <h3>Sustentabilidade</h3>
+                                <p>Iniciativas sustentáveis que valorizam a produção consciente e o meio ambiente.</p>
+                            </div>
+                            <div className="relacionamento-card">
+                                <img src="/icons/comunicacao.svg" alt="Comunicação Direta" />
+                                <h3>Comunicação Direta</h3>
+                                <p>Canais de conversa exclusivos com confeiteiros e donos de pequenos negócios.</p>
+                            </div>
+                            <div className="relacionamento-card">
+                                <img src="/icons/digital.svg" alt="Presença Digital" />
+                                <h3>Presença Digital</h3>
+                                <p>Plataforma integrada para conteúdos, novidades e trocas com a comunidade.</p>
+                            </div>
+                        </div>
                     </section>
 
-                    {/*/!* Canal exclusivo para confeiteiros *!/*/}
-                    {/*<section className="canal-section">*/}
-                    {/*    <h2>Canal exclusivo para confeiteiros</h2>*/}
-                    {/*    <p>*/}
-                    {/*        Criamos um espaço dedicado dentro da plataforma oficial da Nutella:*/}
-                    {/*    </p>*/}
-                    {/*    <ul>*/}
-                    {/*        <li>*/}
-                    {/*            <strong>Blog do Confeiteiro:</strong> com dicas práticas, receitas e técnicas de venda.*/}
-                    {/*        </li>*/}
-                    {/*        <li>*/}
-                    {/*            <strong>Espaço colaborativo:</strong> para confeiteiros trocarem experiências e sugestões.*/}
-                    {/*        </li>*/}
-                    {/*        <li>*/}
-                    {/*            <strong>Acesso exclusivo:</strong> via login com CNPJ para desbloquear conteúdos e ações.*/}
-                    {/*        </li>*/}
-                    {/*    </ul>*/}
-                    {/*</section>*/}
 
-                    {/* Programa de Recompensas */}
+                    {/*/!* Programa de Recompensas *!/*/}
                     <section className="recompensas-section">
                         <h2>Programa de Recompensas</h2>
-                        <p>
-                            Com QR Codes nas embalagens, confeiteiros acumulam pontos ao cadastrar códigos únicos
-                            na plataforma. Os pontos geram vantagens reais:
-                        </p>
-                        <ul>
-                            <li>Descontos em novas compras</li>
-                            <li>Brindes e materiais exclusivos</li>
-                            <li>Acesso a eventos e workshops</li>
-                            <li>Promoções personalizadas conforme o perfil profissional</li>
-                        </ul>
+                        <div className="recompensas-items">
+                            <div className="recompensa-item">
+                                <img src="/icons/desconto.svg" alt="Descontos" />
+                                <h3>Descontos Exclusivos</h3>
+                                <p>Ganhe descontos reais em novas compras ao acumular pontos.</p>
+                            </div>
+                            <div className="recompensa-item">
+                                <img src="/icons/brindes.svg" alt="Brindes" />
+                                <h3>Brindes Nutella®</h3>
+                                <p>Receba materiais e brindes personalizados com a marca.</p>
+                            </div>
+                            <div className="recompensa-item">
+                                <img src="/icons/eventos.svg" alt="Eventos" />
+                                <h3>Eventos & Workshops</h3>
+                                <p>Participe de encontros, capacitações e feiras do setor.</p>
+                            </div>
+                            <div className="recompensa-item">
+                                <img src="/icons/personalizado.svg" alt="Promoções" />
+                                <h3>Promoções Personalizadas</h3>
+                                <p>Ofertas únicas, feitas especialmente para confeiteiros Nutella®.</p>
+                            </div>
+                        </div>
                     </section>
+
         </div>
     );
 }

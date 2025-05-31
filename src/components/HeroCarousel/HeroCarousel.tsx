@@ -34,7 +34,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = (
                 }
                 return next;
             });
-        }, 7000);
+        }, 5000);
         return () => clearInterval(interval);
     }, [slides.length, onSlideChange]);
 
