@@ -217,13 +217,14 @@
 
 /*Galeria de imagens*/
 .galeria-hover {
-    background: white;
+    background-color: #f8f8f8;
+    margin-top: 80px;
     padding: 60px 20px;
     text-align: center;
 }
 
 .galeria-hover h2 {
-    color: #e01a22;
+    color: black;
     font-size: 28px;
     margin-bottom: 40px;
 }
@@ -277,12 +278,12 @@
 .relacionamento-section {
     background-color: white;
     text-align: center;
-    padding: 60px 20px;
-    margin-top: 60px;
+    padding: 60px;
+    margin-top: 30px;
 }
 
 .relacionamento-section h2 {
-    font-size: 28px;
+    font-size: 2rem;
     color: #e01a22;
     margin-bottom: 40px;
 }
@@ -326,10 +327,61 @@
     line-height: 1.4;
 }
 
+/*Grafico*/
+.impacto-section {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.impacto-section h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.impacto-description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.impacto-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.impacto-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 220px;
+}
+
+.impacto-card h3 {
+    font-size: 2rem;
+    color: #e01a22;
+}
+
+.impacto-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.impacto-asterisk {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 20px;
+}
+
 /*Recompensas */
 .recompensas-section {
     background-color: white;
-    padding: 60px 20px;
+    padding: 60px;
     text-align: center;
 }
 
@@ -374,3 +426,46 @@
     font-size: 15px;
     color: #555;
 }
+
+/*Qrcode*/
+.qrcode-hover {
+    background-color: #f8f8f8;
+    margin-top: 80px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.qrcode-description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.qrcode-grid {
+    display: grid;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.qrocode-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.qrcode-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(224, 26, 34, 0.85);
+    color: white;
+    padding: 14px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    text-align: center;
+}
+

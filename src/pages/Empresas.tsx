@@ -88,7 +88,6 @@ function Empresas() {
 
                     </section>
 
-
                     {/* Benefícios */}
                     <section className="benefits-grid">
                         <h2>Por que escolher a linha profissional?</h2>
@@ -118,6 +117,7 @@ function Empresas() {
 
                     {/* Galeria de Imagens */}
                     <section className="galeria-hover">
+                        <h2>Demonstração em fotos</h2>
                         <div className="galeria-grid">
                             <div className="galeria-item">
                                 <img src="/images/galeria1.png" alt="Usando Nutella" />
@@ -134,18 +134,17 @@ function Empresas() {
                         </div>
                     </section>
 
-
                     {/* Estratégia de relacionamento */}
                     <section className="relacionamento-section">
                         <h2>Construindo relacionamento com os profissionais</h2>
                         <div className="relacionamento-cards">
                             <div className="relacionamento-card">
-                                <img src="/icons/produto.svg" alt="Novos Produtos" />
+                                <img src="/icons/novos.svg" alt="Novos Produtos" />
                                 <h3>Novos Produtos</h3>
                                 <p>Desenvolvimento de itens voltados à produção artesanal com foco no uso profissional.</p>
                             </div>
                             <div className="relacionamento-card">
-                                <img src="/icons/sustentavel.svg" alt="Sustentabilidade" />
+                                <img src="/icons/sustentabilidade.svg" alt="Sustentabilidade" />
                                 <h3>Sustentabilidade</h3>
                                 <p>Iniciativas sustentáveis que valorizam a produção consciente e o meio ambiente.</p>
                             </div>
@@ -162,13 +161,38 @@ function Empresas() {
                         </div>
                     </section>
 
+                    {/*Grafico*/}
+                    <section className="impacto-section">
+                        <h2>Impacto nos Negócios</h2>
+                        <p className="impacto-description">
+                            Trabalhar com a linha profissional Nutella® não é apenas uma escolha de sabor, é uma decisão estratégica.
+                            Profissionais que utilizam Nutella® relatam aumento nas vendas, maior fidelidade dos clientes e valorização da marca nos seus produtos.
+                        </p>
+
+                        <div className="impacto-stats">
+                            <div className="impacto-card">
+                                <h3>+24%</h3>
+                                <p>de aumento nas vendas de produtos com Nutella®*</p>
+                            </div>
+                            <div className="impacto-card">
+                                <h3>78%</h3>
+                                <p>dos clientes preferem produtos com Nutella® original*</p>
+                            </div>
+                            <div className="impacto-card">
+                                <h3>+45%</h3>
+                                <p>de percepção de valor nos cardápios que usam a marca*</p>
+                            </div>
+                        </div>
+
+                        <p className="impacto-asterisk">*Dados fictícios para demonstração.</p>
+                    </section>
 
                     {/*/!* Programa de Recompensas *!/*/}
                     <section className="recompensas-section">
                         <h2>Programa de Recompensas</h2>
                         <div className="recompensas-items">
                             <div className="recompensa-item">
-                                <img src="/icons/desconto.svg" alt="Descontos" />
+                                <img src="/icons/descontos.svg" alt="Descontos" />
                                 <h3>Descontos Exclusivos</h3>
                                 <p>Ganhe descontos reais em novas compras ao acumular pontos.</p>
                             </div>
@@ -183,13 +207,27 @@ function Empresas() {
                                 <p>Participe de encontros, capacitações e feiras do setor.</p>
                             </div>
                             <div className="recompensa-item">
-                                <img src="/icons/personalizado.svg" alt="Promoções" />
+                                <img src="/icons/promocao.svg" alt="Promoções" />
                                 <h3>Promoções Personalizadas</h3>
                                 <p>Ofertas únicas, feitas especialmente para confeiteiros Nutella®.</p>
                             </div>
                         </div>
                     </section>
 
+                    {/* QRcode */}
+                    <section className="galeria-hover">
+                        <h2>Promoção do QRcode</h2>
+                        <p className="impacto-description">
+                            Cadastre o QRcode da caixa de Nutella® e ganhe pontos no programa de recompensas.
+                            É simples, rápido e você ainda pode <strong> acumular pontos </strong> para trocar por descontos e brindes exclusivos!
+                        </p>
+                        <div className="qrcode-grid">
+                            <div className="galeria-item">
+                                <img src="/images/nutella_caixa_qrcode.png" alt="QRCode caixa" />
+                                <div className="overlay">Cadastre o QRcode e ganhe pontos!</div>
+                            </div>
+                        </div>
+                    </section>
         </div>
     );
 }

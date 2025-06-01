@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="40" fill="#e01a22"></rect>
+
+  <!-- Calendário -->
+  <rect x="14" y="18" width="36" height="32" rx="2" fill="white"></rect>
+  <line x1="14" y1="26" x2="50" y2="26" stroke="#e01a22" stroke-width="2"></line>
+
+  <!-- Argolas -->
+  <rect x="20" y="14" width="4" height="8" fill="#e01a22"></rect>
+  <rect x="40" y="14" width="4" height="8" fill="#e01a22"></rect>
+
+  <!-- Balão de fala -->
+  <path d="M24 36H40C41.1 36 42 36.9 42 38V44C42 45.1 41.1 46 40 46H30L26 50V46H24C22.9 46 22 45.1 22 44V38C22 36.9 22.9 36 24 36Z" fill="#e01a22"></path>
+</svg>

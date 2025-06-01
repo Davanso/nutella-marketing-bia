@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="40" fill="#e01a22"></rect>
+  
+  <!-- Planta -->
+  <path d="M32 20C30 16 26 14 22 14C24 18 28 20 32 20Z" fill="white"></path>
+  <path d="M32 20C34 16 38 14 42 14C40 18 36 20 32 20Z" fill="white"></path>
+  <rect x="30" y="28" width="4" height="17" fill="white"></rect>
+</svg>

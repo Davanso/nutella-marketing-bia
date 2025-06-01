@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="40" fill="#e01a22"></rect>
+
+  <!-- Selo/Estrela de promoção -->
+  <path d="M32 6L36 14L44 12L42 20L50 24L44 28L48 36L40 34L36 42L32 34L28 42L24 34L16 36L20 28L14 24L22 20L20 12L28 14L32 6Z" fill="white"></path>
+    <!-- Texto "Promoção" -->
+    <text x="32" y="50" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Promoção</text>
+</svg>
